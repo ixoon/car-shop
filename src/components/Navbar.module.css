@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    margin-top: 0;
+    position: fixed; /* Dodato */
+    top: 0; /* Fiksira navbar na vrh ekrana */
+    z-index: 1000; /* Obezbeđuje da navbar bude iznad drugih elemenata */
+}
+
+.links {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.cartIcon {
+    position: relative; /* Ovo omogućava badge-u da bude pozicioniran apsolutno u odnosu na ovu komponentu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartBadge {
+    position: absolute;
+    top: -10px; /* Prilagodi ovu vrednost ako je potrebno */
+    right: -10px;
+    margin-right: 40px;
+    margin-top: 15px; /* Prilagodi ovu vrednost ako je potrebno */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
